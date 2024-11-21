@@ -1,0 +1,61 @@
+
+11/20/2024 12:39:37.428 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 12:39:40.549 PM :: Launched: CR browser
+
+11/20/2024 12:39:40.558 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 12:39:40.563 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 12:39:40.626 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:40.630 PM :: Timer started:
+
+11/20/2024 12:39:40.661 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:43.966 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:43.972 PM :: Timer stopped at, 3 seconds
+
+11/20/2024 12:39:44.011 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:39:44.123 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 12:39:44.127 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 12:39:44.207 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 12:39:44.289 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 12:39:45.663 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 12:39:45.774 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 12:39:45.780 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:45.787 PM :: Timer started:
+
+11/20/2024 12:39:45.793 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:45.981 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:39:45.989 PM :: Timer stopped at, 0 seconds
+
+11/20/2024 12:39:45.995 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:39:46.109 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 12:39:46.114 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 12:39:46.175 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 12:39:46.272 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 12:39:47.005 PM :: FAIL: Could not hover on //td[@id='ctl00_cCtrlMenu-menuItem000'] :exc: OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.PerformActions(IList`1 actionSequenceList)
+   at DailyCheck_WebAutomation.Common.Base.hoverOnW(IWebElement el, String lbl) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 1056
+
+11/20/2024 12:39:55.972 PM :: Couldn't get 'FAILED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

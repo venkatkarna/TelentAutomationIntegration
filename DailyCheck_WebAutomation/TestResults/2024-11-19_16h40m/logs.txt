@@ -1,0 +1,52 @@
+
+11/19/2024 04:40:57.764 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/19/2024 04:41:00.212 PM :: Launched: CR browser
+
+11/19/2024 04:41:00.235 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/19/2024 04:41:00.241 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/19/2024 04:41:00.305 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 04:41:00.310 PM :: Timer started:
+
+11/19/2024 04:41:00.353 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 04:41:03.644 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 04:41:03.650 PM :: Timer stopped at, 3 seconds
+
+11/19/2024 04:41:03.672 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/19/2024 04:41:03.757 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/19/2024 04:41:03.762 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/19/2024 04:41:03.836 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/19/2024 04:41:03.914 PM :: Clicked element: //input[@id='LoginButton']
+
+11/19/2024 04:41:05.199 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/19/2024 04:41:05.326 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem000']
+
+11/19/2024 04:41:07.528 PM :: Clicked element: //input[@id='ctl00_cphContent_eBusinessCheckBox']
+
+11/19/2024 04:41:07.663 PM :: Clicked element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/19/2024 04:41:07.667 PM :: Got 'Telent_Workstream' value from DailyCheck_WebAutomation configuration as: Cable
+
+11/19/2024 04:41:07.789 PM :: Selected: Cable from element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/19/2024 04:41:07.875 PM :: Clicked element: //input[@id='ctl00_cphContent_btnGetDetails']
+
+11/19/2024 04:41:07.915 PM :: Web element present but not displayed//input[@id='ctl00_cphContent_btnClear']
+
+11/19/2024 04:41:08.098 PM :: PASS: //input[@id='ctl00_cphContent_btnClear'] is shown as expected
+
+11/19/2024 04:41:09.285 PM :: Clicked element: //input[@id='ctl00_cphContent_btnClear']
+
+11/19/2024 04:41:09.307 PM :: Got value:[on] from element: //input[@id='ctl00_cphContent_eBusinessCheckBox'] for attribute: value
+
+11-19-2024 04:41:26.685 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

@@ -1,0 +1,58 @@
+
+11/20/2024 12:40:21.774 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 12:40:25.796 PM :: Launched: CR browser
+
+11/20/2024 12:40:25.807 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 12:40:25.812 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 12:40:25.877 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:25.880 PM :: Timer started:
+
+11/20/2024 12:40:25.914 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:29.629 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:29.633 PM :: Timer stopped at, 3 seconds
+
+11/20/2024 12:40:29.652 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:40:29.777 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 12:40:29.786 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 12:40:29.871 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 12:40:29.954 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 12:40:31.175 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 12:40:31.254 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 12:40:31.259 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:31.265 PM :: Timer started:
+
+11/20/2024 12:40:31.269 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:32.139 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:40:32.144 PM :: Timer stopped at, 0 seconds
+
+11/20/2024 12:40:32.156 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:40:38.466 PM :: FAIL: //input[@id='UserName'] not found :exc:OpenQA.Selenium.WebDriverTimeoutException: Timed out after 5 seconds ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='UserName']"}
+  (Session info: chrome=131.0.6778.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at DailyCheck_WebAutomation.Common.Base.<>c__DisplayClass31_0.<GetElement>b__0(IWebDriver dr) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 375
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   --- End of inner exception stack trace ---
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at DailyCheck_WebAutomation.Common.Base.GetElement(String LocatorValue) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 375
+
+11/20/2024 12:40:47.518 PM :: Couldn't get 'FAILED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

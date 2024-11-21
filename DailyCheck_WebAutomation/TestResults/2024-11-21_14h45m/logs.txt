@@ -1,0 +1,46 @@
+
+11/21/2024 02:45:19.940 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/21/2024 02:45:22.306 PM :: Launched: CR browser
+
+11/21/2024 02:45:22.314 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/21/2024 02:45:22.320 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/21/2024 02:45:22.386 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 02:45:22.390 PM :: Timer started:
+
+11/21/2024 02:45:22.422 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 02:45:24.311 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 02:45:24.318 PM :: Timer stopped at, 1 seconds
+
+11/21/2024 02:45:24.338 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/21/2024 02:45:25.776 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/21/2024 02:45:25.790 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/21/2024 02:45:25.896 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/21/2024 02:45:25.980 PM :: Clicked element: //input[@id='LoginButton']
+
+11/21/2024 02:45:27.357 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/21/2024 02:45:27.486 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/21/2024 02:45:28.706 PM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/21/2024 02:45:30.988 PM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/21/2024 02:45:32.121 PM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/21/2024 02:45:33.181 PM :: Switched to window: 'Copy Job' successfully
+
+11/21/2024 02:45:33.268 PM :: Selected: 1st value from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 02:45:33.320 PM :: Got value: CASS CR7 Payments - 4828 from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 02:45:33.423 PM :: Clicked element: //input[@id='btnCopyJobs']

@@ -1,0 +1,103 @@
+
+11/21/2024 03:16:11.339 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/21/2024 03:16:13.403 PM :: Launched: CR browser
+
+11/21/2024 03:16:13.411 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/21/2024 03:16:13.417 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/21/2024 03:16:13.493 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:16:13.613 PM :: Timer started:
+
+11/21/2024 03:16:13.653 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:16:16.076 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:16:16.080 PM :: Timer stopped at, 2 seconds
+
+11/21/2024 03:16:16.111 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/21/2024 03:16:16.226 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/21/2024 03:16:16.230 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/21/2024 03:16:16.300 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/21/2024 03:16:16.378 PM :: Clicked element: //input[@id='LoginButton']
+
+11/21/2024 03:16:17.963 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/21/2024 03:16:18.053 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/21/2024 03:16:19.194 PM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/21/2024 03:16:20.362 PM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/21/2024 03:16:21.489 PM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/21/2024 03:16:22.778 PM :: Switched to window: 'Copy Job' successfully
+
+11/21/2024 03:16:22.925 PM :: Selected: 1st value from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 03:16:22.991 PM :: Got value: CASS CR7 Payments - 4828 from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 03:16:23.074 PM :: Clicked element: //input[@id='btnCopyJobs']
+
+11/21/2024 03:16:23.125 PM :: Checked for alert and found none:exc:OpenQA.Selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=131.0.6778.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteTargetLocator.Alert()
+   at DailyCheck_WebAutomation.Common.Base.IsAlert() in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 409
+
+11/21/2024 03:16:23.338 PM :: FAIL: No alert present to accept the alert
+
+11-21-2024 03:16:32.219 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.
+
+11/21/2024 03:16:57.532 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/21/2024 03:16:59.854 PM :: Launched: CR browser
+
+11/21/2024 03:16:59.863 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/21/2024 03:16:59.868 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/21/2024 03:16:59.956 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:16:59.962 PM :: Timer started:
+
+11/21/2024 03:16:59.990 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:17:02.858 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 03:17:02.863 PM :: Timer stopped at, 2 seconds
+
+11/21/2024 03:17:02.881 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/21/2024 03:17:02.989 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/21/2024 03:17:02.993 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/21/2024 03:17:03.069 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/21/2024 03:17:03.146 PM :: Clicked element: //input[@id='LoginButton']
+
+11/21/2024 03:17:04.897 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/21/2024 03:17:05.010 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/21/2024 03:17:06.747 PM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/21/2024 03:17:08.441 PM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/21/2024 03:17:09.563 PM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/21/2024 03:17:10.659 PM :: Switched to window: 'Copy Job' successfully
+
+11/21/2024 03:17:10.792 PM :: Selected: 1st value from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 03:17:10.859 PM :: Got value: CASS CR7 Payments - 4828 from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 03:17:10.938 PM :: Clicked element: //input[@id='btnCopyJobs']

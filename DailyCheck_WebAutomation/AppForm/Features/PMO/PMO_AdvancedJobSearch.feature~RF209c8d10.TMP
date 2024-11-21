@@ -1,0 +1,96 @@
+﻿Feature: PMO_AdvancedJobSearch
+
+Validation of Advanced Job Search screen feature
+
+@Smoke
+Scenario: TC001_SOLO_Login_Advanced Job Search
+	Given Launch the solo browser
+	When Enter valid solo UserID
+	When Enter valid solo Password
+	And Click Submit button
+	And Click ‘Advanced Job Search’ link from PMO module
+	Then Verify the display of Advanced Job Search screen
+
+Scenario: TC002_SOLO_Login_Advanced Job Search_Screen element_Verify
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Advanced Job Search’ link from PMO module
+	Then Verify the display of element in Advanced Job Search screen
+
+Scenario: TC003_SOLO_Login_Advanced Job Search_search criteria_Validate
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Advanced Job Search’ link from PMO module
+	When Click on eBus Checkbox
+	When Select the Workstream
+	Then Verify the filled elements in Advanced Job Search screen
+
+Scenario: TC004_SOLO_Login_Advanced Job Search_search criteria_Get Details_Click
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Advanced Job Search’ link from PMO module
+	When Click on eBus Checkbox
+	When Select the Workstream
+	Then Click on Get Details button
+
+Scenario: TC005_SOLO_Login_Advanced Job Search_search criteria_Get Details_Result
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Advanced Job Search’ link from PMO module
+	When Click on eBus Checkbox
+	When Select the Workstream
+	And Click on Get Details button
+	Then Verify the display of Results in Advanced Job Search screen
+
+Scenario: TC006_SOLO_Login_Validation Job Queue_Clear button
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Advanced Job Search’ link from PMO module
+	When Click on eBus Checkbox
+	When Select the Workstream
+	And Click on Clear button
+	Then Verify the cleared values from the Advanced Job Search screen
+
+
+#Scenario: TC006_SOLO_Login_Validation Job Queue_Get Details_Reset button
+#	Given Launch the solo browser
+#	When User login with valid solo credentials
+#	And Click ‘Advanced Job Search’ link from PMO module
+#	When Click on eBus Checkbox
+#	When Select the Workstream
+#	And Click on Get Details button
+#	And Click on Reset button
+#	Then Verify the all search fields and it should be reset successfully
+#
+#Scenario: TC007_SOLO_Login_Validation Job Queue_Get Details_Export View To Excel button
+#	Given Launch the solo browser
+#	When User login with valid solo credentials
+#	And Click ‘Advanced Job Search’ link from PMO module
+#	When Click on eBus Checkbox
+#	When Select the Workstream
+#	And Click on Get Details button
+#	Then Click on Export View To Excel button
+#
+#Scenario: TC008_SOLO_Login_Validation Job Queue_Get Details_View button
+#	Given Launch the solo browser
+#	When User login with valid solo credentials
+#	And Click ‘Advanced Job Search’ link from PMO module
+#	When Click on eBus Checkbox
+#	When Select the Workstream
+#	And Click on Get Details button
+#	And Click on View button
+#
+#Scenario: TC009_SOLO_Login_Validation Job Queue_Get Details_Exit button
+#	Given Launch the solo browser
+#	When User login with valid solo credentials
+#	And Click ‘Advanced Job Search’ link from PMO module
+#	When Click on eBus Checkbox
+#	When Select the Workstream
+#	And Click on Get Details button
+#	And Click on Exit button
+
+
+
+
+
+	

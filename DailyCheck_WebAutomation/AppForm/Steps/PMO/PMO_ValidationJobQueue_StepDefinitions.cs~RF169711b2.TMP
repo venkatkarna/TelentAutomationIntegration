@@ -1,0 +1,67 @@
+﻿using DailyCheck_WebAutomation.AppForm.Pages;
+using DailyCheck_WebAutomation.AppForm.Pages.PMO;
+using DailyCheck_WebAutomation.Common;
+using OpenQA.Selenium.Support.UI;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TechTalk.SpecFlow;
+
+namespace DailyCheck_WebAutomation.AppForm.Steps.PMO
+{
+    [Binding]
+    public class PMO_ValidationJobQueue_StepDefinitions : Base
+    {
+        PMO_Elements PMO_Elements = new PMO_Elements();
+        [Given(@"Launch the solo browser")]
+        public void GivenLaunchTheSoloBrowser()
+        {
+            openUrl(getConfigVal("Telent_URL"));
+            if (tim > 9) LogIt("Time taken: " + tim + " seconds", logTyp.Warn);
+        }
+
+        [When(@"Enter valid solo UserID")]
+        public void WhenEnterValidSoloUserID()
+        {
+            typeText(PMO_Elements.userID, getConfigVal("Telent_UserID"));
+        }
+
+        [When(@"Enter valid solo Password")]
+        public void WhenEnterValidSoloPassword()
+        {
+            typeText(PMO_Elements.password, getConfigVal("Telent_Password"));
+        }
+
+        [When(@"Click Submit button")]
+        public void WhenClickSubmitButton()
+        {
+            ClickEl(PMO_Elements.submitButton);
+            implicitWait(5);
+        }
+
+        [When(@"User login with valid solo credentials")]
+        public void WhenUserLoginWithValidSoloCredentials()
+        {
+            typeText(PMO_Elements.userID, getConfigVal("Telent_UserID"));
+            typeText(PMO_Elements.password, getConfigVal("Telent_Password"));
+            ClickEl(PMO_Elements.submitButton); wait(6);
+        }
+
+        [When(@"Click ‘Advanced Job Search’ link")]
+        public void WhenClickAdvancedJobSearchLink()
+        {
+            hoverOn(PMO_Elements.hoverPMO);
+            ClickEl(PMO_Elements.clickAdvancedJobSearch);
+        }
+
+        [Then(@"Verify Advanced Job Search screen elements")]
+        public void ThenVerifyAdvancedJobSearchScreenElements()
+        {
+            //implicitWait(5);
+            explicitWaitForElementToBeVisible(PMO_Elements.checkUI, 10);
+            isThisShown(PMO_Elements.checkUI);
+        }
+    }
+}

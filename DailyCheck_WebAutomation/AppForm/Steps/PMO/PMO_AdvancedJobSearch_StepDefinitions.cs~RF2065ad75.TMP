@@ -1,0 +1,30 @@
+﻿using DailyCheck_WebAutomation.AppForm.Pages.PMO;
+using DailyCheck_WebAutomation.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TechTalk.SpecFlow;
+
+namespace DailyCheck_WebAutomation.AppForm.Steps.PMO
+{
+    [Binding]
+    public class PMO_AdvancedJobSearch_StepDefinitions : Base
+    {
+        PMO_Elements PMO_Elements = new PMO_Elements();
+        [When(@"Click ‘Advanced Job Search’ link from PMO module")]
+        public void WhenClickAdvancedJobSearchLinkFromPMOModule()
+        {
+            hoverOn(PMO_Elements.hoverPMO);
+            ClickEl(PMO_Elements.clickAdvancedJobSearch);
+        }
+
+        [Then(@"Verify the display of Advanced Job Search screen")]
+        public void ThenVerifyTheDisplayOfAdvancedJobSearchScreen()
+        {
+            throw new PendingStepException();
+        }
+
+    }
+}

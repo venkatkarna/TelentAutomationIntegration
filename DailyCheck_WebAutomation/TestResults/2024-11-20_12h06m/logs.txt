@@ -1,0 +1,53 @@
+
+11/20/2024 12:06:39.076 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 12:06:42.079 PM :: Launched: CR browser
+
+11/20/2024 12:06:42.087 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 12:06:42.092 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 12:06:42.154 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:06:42.158 PM :: Timer started:
+
+11/20/2024 12:06:42.198 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:06:44.359 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:06:44.363 PM :: Timer stopped at, 2 seconds
+
+11/20/2024 12:06:44.376 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:06:44.472 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 12:06:44.475 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 12:06:44.549 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 12:06:44.631 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 12:06:46.043 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 12:06:46.168 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 12:06:47.405 PM :: Clicked element: //input[@id='ctl00_cphContent_ChkeBus']
+
+11/20/2024 12:06:47.508 PM :: Clicked element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/20/2024 12:06:47.514 PM :: Got 'Telent_Workstream' value from DailyCheck_WebAutomation configuration as: Cable
+
+11/20/2024 12:06:47.659 PM :: Selected: Cable from element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/20/2024 12:06:48.528 PM :: scrolled to top of the page.
+
+11/20/2024 12:06:48.546 PM :: Waiting for 0.4 second/s
+
+11/20/2024 12:06:49.196 PM :: FAIL: Could not click element: //input[@id='ctl00_cphContent_btnClearSearch'] after scrolling down :exc: OpenQA.Selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=131.0.6778.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.ExecuteScriptCommand(String script, String commandName, Object[] args)
+   at DailyCheck_WebAutomation.Common.Base.JSClickW(IWebElement ele, String lbl) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 857
+
+11/20/2024 12:06:58.040 PM :: Couldn't get 'FAILED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

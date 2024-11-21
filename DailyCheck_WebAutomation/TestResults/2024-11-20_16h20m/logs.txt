@@ -1,0 +1,54 @@
+
+11/20/2024 04:20:32.419 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 04:20:35.570 PM :: Launched: CR browser
+
+11/20/2024 04:20:35.578 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 04:20:35.585 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 04:20:35.662 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:20:35.666 PM :: Timer started:
+
+11/20/2024 04:20:35.695 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:20:37.818 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:20:37.826 PM :: Timer stopped at, 2 seconds
+
+11/20/2024 04:20:37.867 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 04:20:37.958 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 04:20:37.962 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 04:20:38.040 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 04:20:38.118 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 04:20:39.475 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 04:20:39.613 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 04:20:40.934 PM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/20/2024 04:20:42.067 PM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/20/2024 04:20:43.197 PM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/20/2024 04:20:43.202 PM :: Waiting for 5 second/s
+
+11/20/2024 04:20:54.870 PM :: FAIL: //select[@id='ddlDepot'] not found :exc:OpenQA.Selenium.WebDriverTimeoutException: Timed out after 5 seconds ---> OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@id='ddlDepot']"}
+  (Session info: chrome=131.0.6778.85)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   at OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   at DailyCheck_WebAutomation.Common.Base.<>c__DisplayClass31_0.<GetElement>b__0(IWebDriver dr) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 375
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   --- End of inner exception stack trace ---
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at DailyCheck_WebAutomation.Common.Base.GetElement(String LocatorValue) in D:\Thanushiya\CPT\Telent\Automation\BDD Cucumber\Script\V0.1\DailyCheck_WebAutomation\DailyCheck_WebAutomation\Common\Base.cs:line 375
+
+11/20/2024 04:21:04.288 PM :: Couldn't get 'FAILED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

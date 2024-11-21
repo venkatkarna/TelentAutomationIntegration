@@ -1,0 +1,52 @@
+
+11/20/2024 04:41:36.382 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 04:41:39.619 PM :: Launched: CR browser
+
+11/20/2024 04:41:39.631 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 04:41:39.637 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 04:41:39.710 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:41:39.714 PM :: Timer started:
+
+11/20/2024 04:41:39.747 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:41:42.549 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 04:41:42.554 PM :: Timer stopped at, 2 seconds
+
+11/20/2024 04:41:42.567 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 04:41:42.665 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 04:41:42.669 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 04:41:42.747 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 04:41:42.833 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 04:41:45.118 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 04:41:45.196 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 04:41:48.819 PM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/20/2024 04:41:50.000 PM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/20/2024 04:41:51.138 PM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/20/2024 04:41:52.194 PM :: Waiting for 5 second/s
+
+11/20/2024 04:41:57.250 PM :: Switched to window: 'Copy Job' successfully
+
+11/20/2024 04:41:57.423 PM :: Selected: 1st value from dropdown: //select[@id='ddlDepot']
+
+11/20/2024 04:41:57.482 PM :: Got value: CASS CR7 Payments - 4828 from dropdown: //select[@id='ddlDepot']
+
+11/20/2024 04:41:57.486 PM :: Waiting for 5 second/s
+
+11/20/2024 04:42:02.568 PM :: Clicked element: //input[@id='btnCopyJobs']
+
+11-20-2024 04:42:20.123 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

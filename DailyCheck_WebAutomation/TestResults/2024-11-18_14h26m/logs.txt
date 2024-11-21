@@ -1,0 +1,50 @@
+
+11/18/2024 02:26:25.375 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/18/2024 02:26:34.759 PM :: Launched: CR browser
+
+11/18/2024 02:26:34.766 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/18/2024 02:26:34.772 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/18/2024 02:26:34.833 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/18/2024 02:26:34.837 PM :: Timer started:
+
+11/18/2024 02:26:34.864 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/18/2024 02:26:36.988 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/18/2024 02:26:36.992 PM :: Timer stopped at, 2 seconds
+
+11/18/2024 02:26:37.002 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/18/2024 02:26:37.139 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/18/2024 02:26:37.172 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/18/2024 02:26:37.254 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/18/2024 02:26:37.312 PM :: Clicked element: //input[@id='LoginButton']
+
+11/18/2024 02:26:39.678 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/18/2024 02:26:39.756 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/18/2024 02:26:40.869 PM :: Clicked element: //input[@id='ctl00_cphContent_ChkeBus']
+
+11/18/2024 02:26:40.959 PM :: Clicked element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/18/2024 02:26:40.964 PM :: Got 'Telent_Workstream' value from DailyCheck_WebAutomation configuration as: Cable
+
+11/18/2024 02:26:41.138 PM :: Selected: Cable from element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/18/2024 02:26:41.179 PM :: Web element present but not displayed//input[@id='ctl00_cphContent_ChkeBus']
+
+11/18/2024 02:26:41.413 PM :: PASS: //input[@id='ctl00_cphContent_ChkeBus'] is shown as expected
+
+11/18/2024 02:26:41.449 PM :: Web element present but not displayed//select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/18/2024 02:26:41.617 PM :: PASS: //select[@id='ctl00_cphContent_ddlWorkstream'] is shown as expected
+
+11-18-2024 02:27:03.131 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

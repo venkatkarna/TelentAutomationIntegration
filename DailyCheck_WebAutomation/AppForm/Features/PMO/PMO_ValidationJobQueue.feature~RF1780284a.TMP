@@ -1,0 +1,35 @@
+﻿Feature: PMO_ValidationJobQueue
+
+Validation Job Queue screen feature
+
+@Smoke
+Scenario: TC001_SOLO_Login_Validation Job Queue
+	Given Launch the solo browser
+	When Enter valid solo UserID
+	When Enter valid solo Password
+	And Click Submit button
+	And Click ‘Validation Job Queue’ link from PMO module
+	Then Verify the display of Validation Job Queue screen
+
+Scenario: TC002_SOLO_Login_Validation Job Queue_Screen element_Verify
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Validation Job Queue’ link from PMO module
+	Then Verify the display of element in Validation Job Queue screen
+
+Scenario: TC003_SOLO_Login_Validation Job Queue_search criteria_Validate
+	Given Launch the solo browser
+	When User login with valid solo credentials
+	And Click ‘Validation Job Queue’ link from PMO module
+	When Click on eBusiness Checkbox
+	When Select the Workstream
+	Then Verify the filled elements
+
+
+
+
+
+
+
+
+	

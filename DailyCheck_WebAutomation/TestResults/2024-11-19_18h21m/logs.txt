@@ -1,0 +1,46 @@
+
+11/19/2024 06:21:50.088 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/19/2024 06:21:53.830 PM :: Launched: CR browser
+
+11/19/2024 06:21:53.837 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/19/2024 06:21:53.844 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/19/2024 06:21:53.923 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 06:21:53.928 PM :: Timer started:
+
+11/19/2024 06:21:53.956 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 06:21:56.948 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/19/2024 06:21:56.953 PM :: Timer stopped at, 3 seconds
+
+11/19/2024 06:21:56.972 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/19/2024 06:21:57.122 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/19/2024 06:21:57.127 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/19/2024 06:21:57.212 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/19/2024 06:21:57.291 PM :: Clicked element: //input[@id='LoginButton']
+
+11/19/2024 06:21:58.525 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/19/2024 06:21:58.631 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem000']
+
+11/19/2024 06:22:01.029 PM :: Clicked element: //input[@id='ctl00_cphContent_eBusinessCheckBox']
+
+11/19/2024 06:22:01.167 PM :: Clicked element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/19/2024 06:22:01.171 PM :: Got 'Telent_Workstream' value from DailyCheck_WebAutomation configuration as: Cable
+
+11/19/2024 06:22:01.303 PM :: Selected: Cable from element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/19/2024 06:22:01.399 PM :: Clicked element: //input[@id='ctl00_cphContent_btnGetDetails']
+
+11/19/2024 06:22:06.871 PM :: Clicked element: //input[@id='ctl00_cphContent_btnExportToExcel']
+
+11-19-2024 06:22:23.941 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

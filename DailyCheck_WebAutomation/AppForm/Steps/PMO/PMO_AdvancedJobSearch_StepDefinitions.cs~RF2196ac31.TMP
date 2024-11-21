@@ -1,0 +1,136 @@
+﻿using DailyCheck_WebAutomation.AppForm.Pages.PMO;
+using DailyCheck_WebAutomation.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TechTalk.SpecFlow;
+
+namespace DailyCheck_WebAutomation.AppForm.Steps.PMO
+{
+    [Binding]
+    public class PMO_AdvancedJobSearch_StepDefinitions : Base
+    {
+        PMO_Elements PMO_Elements = new PMO_Elements();
+        [When(@"Click ‘Advanced Job Search’ link from PMO module")]
+        public void WhenClickAdvancedJobSearchLinkFromPMOModule()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.hoverPMO, 5);
+            hoverOn(PMO_Elements.hoverPMO);
+            ClickEl(PMO_Elements.clickAdvancedJobSearch);
+        }
+
+        [Then(@"Verify the display of Advanced Job Search screen")]
+        public void ThenVerifyTheDisplayOfAdvancedJobSearchScreen()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.checkAdvancedJobSearchUI, 5);
+            isThisShown(PMO_Elements.checkAdvancedJobSearchUI);
+        }
+
+        [Then(@"Verify the display of element in Advanced Job Search screen")]
+        public void ThenVerifyTheDisplayOfElementInAdvancedJobSearchScreen()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.clickeBusCheckbox, 5);
+            isThisShown(PMO_Elements.clickeBusCheckbox);
+            explicitWaitForElementToBeVisible(PMO_Elements.selectWorkstream, 5);
+            isThisShown(PMO_Elements.selectWorkstream);
+        }
+
+        [When(@"Click on eBus Checkbox")]
+        public void WhenClickOnEBusCheckbox()
+        {
+            ClickEl(PMO_Elements.clickeBusCheckbox); implicitWait(5);
+        }
+
+        [Then(@"Verify the filled elements in Advanced Job Search screen")]
+        public void ThenVerifyTheFilledElementsInAdvancedJobSearchScreen()
+        {
+            implicitWait(5);
+            isThisShown(PMO_Elements.clickeBusCheckbox);
+            isThisShown(PMO_Elements.selectWorkstream);
+        }
+
+        [Then(@"Verify the display of Results in Advanced Job Search screen")]
+        public void ThenVerifyTheDisplayOfResultsInAdvancedJobSearchScreen()
+        {
+            implicitWait(5);
+            isThisShown(PMO_Elements.verifyAdvancedJobSearchResults);
+        }
+
+        [When(@"Click on Clear button")]
+        public void WhenClickOnClearButton()
+        {
+            implicitWait(5);
+            WaitForJqueryAjax();
+            ClickEl(PMO_Elements.clickClearButton);
+        }
+
+        [Then(@"Verify the cleared values from the Advanced Job Search screen")]
+        public void ThenVerifyTheClearedValuesFromTheAdvancedJobSearchScreen()
+        {
+            implicitWait(8);
+            WaitForJqueryAjax();
+            isExist(PMO_Elements.clickeBusCheckbox);
+            isExist(PMO_Elements.selectWorkstream);
+        }
+
+        [When(@"Click on My Job button")]
+        public void GivenClickOnMyJobButton()
+        {
+            WaitForJqueryAjax();
+            ClickEl(PMO_Elements.clickMyJobButton);
+        }
+
+        [Then(@"Verify the display of jobs in Search Results grid")]
+        public void ThenVerifyTheDisplayOfJobsInSearchResultsGrid()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.verifyMyJobResults, 5);
+            isThisShown(PMO_Elements.verifyMyJobResults);
+        }
+
+        [When(@"Click on Add Job button")]
+        public void WhenClickOnAddJobButton()
+        {
+            WaitForJqueryAjax();
+            ClickEl(PMO_Elements.clickAddJobButton);
+        }
+
+        [Then(@"Verify the display of Add job screen")]
+        public void ThenVerifyTheDisplayOfAddJobScreen()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.verifyMyJobResults, 5);
+            isThisShown(PMO_Elements.verifyMyJobResults);
+        }
+
+        [When(@"Select the first job from Search Results grid")]
+        public void WhenSelectTheFirstJobFromSearchResultsGrid()
+        {
+            implicitWait(5);
+            WaitForJqueryAjax();
+            ClickEl(PMO_Elements.selectFirstJob);
+        }
+
+        [When(@"Click on Copy Job button")]
+        public void WhenClickOnCopyJobButton()
+        {
+            implicitWait(5);
+            WaitForJqueryAjax();
+            ClickEl(PMO_Elements.clickCopyJobButton);
+        }
+
+        [When(@"Click on Copy button after select the Depot from dropdown")]
+        public void WhenClickOnCopyButtonAfterSelectTheDepotFromDropdown()
+        {
+            implicitWait(5);
+            WaitForJqueryAjax();
+            wait(5);
+            switchToWin("Copy Job");
+            SelectByIndex(PMO_Elements.selectDepot, 1);
+            wait(5);
+            ClickEl(PMO_Elements.clickCopyButton);
+        }
+
+    }
+    //typeText(PMO_Elements.password, getConfigVal("Telent_Password"));
+}

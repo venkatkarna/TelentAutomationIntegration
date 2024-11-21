@@ -1,0 +1,48 @@
+
+11/21/2024 11:21:01.866 AM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/21/2024 11:21:04.494 AM :: Launched: CR browser
+
+11/21/2024 11:21:04.501 AM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/21/2024 11:21:04.507 AM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/21/2024 11:21:04.567 AM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 11:21:04.572 AM :: Timer started:
+
+11/21/2024 11:21:04.599 AM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 11:21:07.699 AM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/21/2024 11:21:07.703 AM :: Timer stopped at, 3 seconds
+
+11/21/2024 11:21:07.725 AM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/21/2024 11:21:07.809 AM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/21/2024 11:21:07.813 AM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/21/2024 11:21:07.892 AM :: Typed '**********' in element: //input[@id='Password']
+
+11/21/2024 11:21:07.971 AM :: Clicked element: //input[@id='LoginButton']
+
+11/21/2024 11:21:09.323 AM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/21/2024 11:21:09.397 AM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/21/2024 11:21:10.513 AM :: Clicked element: //input[@id='ctl00_cphContent_btnMyJobs']
+
+11/21/2024 11:21:12.127 AM :: Clicked element: //table[@id='ctl00_cphContent_SearchGrid']/tbody/tr[2]
+
+11/21/2024 11:21:13.233 AM :: Clicked element: //input[@id='ctl00_cphContent_btnCopyJobs']
+
+11/21/2024 11:21:14.290 AM :: Switched to window: 'Copy Job' successfully
+
+11/21/2024 11:21:14.386 AM :: Selected: 1st value from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 11:21:14.440 AM :: Got value: CASS CR7 Payments - 4828 from dropdown: //select[@id='ddlDepot']
+
+11/21/2024 11:21:14.526 AM :: Clicked element: //input[@id='btnCopyJobs']
+
+11-21-2024 11:21:25.767 AM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.

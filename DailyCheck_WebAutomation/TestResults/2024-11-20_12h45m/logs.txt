@@ -1,0 +1,50 @@
+
+11/20/2024 12:45:37.738 PM :: Got 'BROWSER' value from DailyCheck_WebAutomation configuration as: CR
+
+11/20/2024 12:45:40.708 PM :: Launched: CR browser
+
+11/20/2024 12:45:40.716 PM :: Got valueNO for Key: StopExecute from Test.properties
+
+11/20/2024 12:45:40.721 PM :: Got valueNO for Key: StopFeature from Test.properties
+
+11/20/2024 12:45:40.801 PM :: Got 'Telent_URL' value from DailyCheck_WebAutomation configuration as: http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:45:40.805 PM :: Timer started:
+
+11/20/2024 12:45:40.833 PM :: Launching url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:45:43.006 PM :: Launched url:http://172.16.0.61/SOLO/index.aspx
+
+11/20/2024 12:45:43.011 PM :: Timer stopped at, 2 seconds
+
+11/20/2024 12:45:43.026 PM :: Got 'Telent_UserID' value from DailyCheck_WebAutomation configuration as: balasubramanian.n@changepond.com
+
+11/20/2024 12:45:43.132 PM :: Typed 'balasubramanian.n@changepond.com' in element: //input[@id='UserName']
+
+11/20/2024 12:45:43.138 PM :: Got 'Telent_Password' value from DailyCheck_WebAutomation configuration as: POwer.12
+
+11/20/2024 12:45:43.245 PM :: Typed '**********' in element: //input[@id='Password']
+
+11/20/2024 12:45:43.331 PM :: Clicked element: //input[@id='LoginButton']
+
+11/20/2024 12:45:44.582 PM :: Hovered on ://td[@id='ctl00_cCtrlMenu-menuItem000']
+
+11/20/2024 12:45:44.690 PM :: Clicked element: //*[@id='ctl00_cCtrlMenu-menuItem000-subMenu-menuItem001']
+
+11/20/2024 12:45:45.596 PM :: Clicked element: //input[@id='ctl00_cphContent_ChkeBus']
+
+11/20/2024 12:45:45.696 PM :: Clicked element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/20/2024 12:45:45.699 PM :: Got 'Telent_Workstream' value from DailyCheck_WebAutomation configuration as: Cable
+
+11/20/2024 12:45:45.834 PM :: Selected: Cable from element: //select[@id='ctl00_cphContent_ddlWorkstream']
+
+11/20/2024 12:45:46.992 PM :: Clicked element: //input[@id='ctl00_cphContent_btnGetDetails']
+
+11/20/2024 12:45:52.066 PM :: Waiting for 0.4 second/s
+
+11/20/2024 12:45:53.210 PM :: Web element present but not displayed//table[@id='ctl00_cphContent_SearchGrid']
+
+11/20/2024 12:45:53.376 PM :: PASS: //table[@id='ctl00_cphContent_SearchGrid'] is shown as expected
+
+11-20-2024 12:46:09.547 PM :: Couldn't get 'PASSED_TO_EMAILS' value from DailyCheck_WebAutomation configuration.
