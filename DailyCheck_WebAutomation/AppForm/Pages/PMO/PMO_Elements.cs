@@ -50,6 +50,11 @@ namespace DailyCheck_WebAutomation.AppForm.Pages.PMO
         public string selectDepot = "//select[@id='ddlDepot']";
         public string clickCopyButton = "//input[@id='btnCopyJobs']";
         public string verifyCopyJobScreen = "//td[contains(normalize-space(text()),'Job Info')]";
+        public string clickTakeOffHoldButton = "//input[@id='ctl00_cphContent_btnHold']";
+        public string clickMoreButton = "//input[@id='ctl00_cphContent_btnAdvSearch']";
+        public string selectJobStatus = "//select[@id='ctl00_cphContent_lstOrderStatus']";
+        public string verifyJobInfoScreen = "//input[@id='ctl00_cphContent_btnHold']";
+        public string clickRemoveOwnerButton = "//input[@id='ctl00_cphContent_btnRemoveOwner']";
 
 
 

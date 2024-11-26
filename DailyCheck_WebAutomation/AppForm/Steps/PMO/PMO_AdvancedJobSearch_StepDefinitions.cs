@@ -130,28 +130,59 @@ namespace DailyCheck_WebAutomation.AppForm.Steps.PMO
             dr.Manage().Window.Maximize();
             SelectByIndex(PMO_Elements.selectDepot, 1);
             ClickEl(PMO_Elements.clickCopyButton);
-            //WaitForJqueryAjax();
-            //acceptAlert();
         }
 
         [Then(@"Verify the display of Copied Job screen")]
         public void ThenVerifyTheDisplayOfCopiedJobScreen()
         {
-            //implicitWait(5);
+            GetAlertTextAndAccept(dr);
+            switchToWindowGetTitle("WindowTitle_JobInfo");
             explicitWaitForElementToBeVisible(PMO_Elements.verifyCopyJobScreen, 5);
             isThisShown(PMO_Elements.verifyCopyJobScreen);
-            WaitForJqueryAjax();
-            GetAlertTextAndAccept(dr);
-            //implicitWait(5);
-            //WaitForJqueryAjax();
-            //IsAlert();
-            //getAlertText();
-            //acceptAlert();
-            //switchToWindowGetTitle("WindowTitle_JobInfo");
-            //explicitWaitForElementToBeVisible(PMO_Elements.verifyCopyJobScreen, 5);
-            //isThisShown(PMO_Elements.verifyCopyJobScreen);
         }
 
+        [When(@"Click on More button")]
+        public void WhenClickOnMoreButton()
+        {
+            implicitWait(5);
+            ClickEl(PMO_Elements.clickMoreButton);
+        }
+
+        [When(@"Select the Job Status as On Hold")]
+        public void WhenSelectTheJobStatusAsOnHold()
+        {
+            implicitWait(5);
+            ClickEl(PMO_Elements.selectJobStatus);
+            SelectText(PMO_Elements.selectJobStatus, getConfigVal("AdvancedJobSearch_JobStatus"));
+        }
+
+        [When(@"Click on Take-off Hold button")]
+        public void WhenClickOnTake_OffHoldButton()
+        {
+            implicitWait(5);
+            ClickEl(PMO_Elements.clickTakeOffHoldButton);
+        }
+
+        [Then(@"Verify the display of Job Info screen")]
+        public void ThenVerifyTheDisplayOfJobInfoScreen()
+        {
+            explicitWaitForElementToBeVisible(PMO_Elements.verifyJobInfoScreen, 5);
+            isThisShown(PMO_Elements.verifyJobInfoScreen);
+        }
+
+        [When(@"Click on Remove Owner button")]
+        public void WhenClickOnRemoveOwnerButton()
+        {
+            implicitWait(5);
+            ClickEl(PMO_Elements.clickRemoveOwnerButton);
+        }
+
+        [Then(@"Verify the alert message and accept it")]
+        public void ThenVerifyTheAlertMessageAndAcceptIt()
+        {
+            implicitWait(5);
+            GetAlertTextAndAccept(dr);
+        }
 
     }
     //typeText(PMO_Elements.password, getConfigVal("Telent_Password"));

@@ -2,7 +2,7 @@
 
 Verify functionality of the Advanced Job Search screen.
 
-Background: 	
+Background:
 	Given Launch the solo browser
 	When User login with valid solo credentials
 	And Click ‘Advanced Job Search’ link from PMO module
@@ -51,6 +51,26 @@ Scenario: TC009_SOLO_Login_Advanced Job Search_Copy Job button
 	And Click on Copy Job button
 	And Click on Copy button after select the Depot from dropdown
 	Then Verify the display of Copied Job screen
+
+Scenario: TC010_SOLO_Login_Advanced Job Search_Take-off Hold button
+	When Click on My Job button
+	And Click on More button
+	And Select the Job Status as On Hold
+	And Click on Get Details button
+	When Select the first job from Search Results grid
+	And Click on Take-off Hold button
+	Then Verify the display of Job Info screen
+
+Scenario: TC011_SOLO_Login_Advanced Job Search_Remove Owner button
+	When Click on My Job button
+	And Click on Get Details button
+	When Select the first job from Search Results grid
+	And Click on Remove Owner button
+	Then Verify the alert message and accept it
+
+Scenario: TC012_SOLO_Login_Advanced Job Search_Export View To Excel button
+	When Click on My Job button
+	And Click on Get Details button
 
 
 #Scenario: TC006_SOLO_Login_Validation Job Queue_Get Details_Reset button
