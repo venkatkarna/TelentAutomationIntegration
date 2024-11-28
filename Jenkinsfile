@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOTNET_PATH = 'C:\\Program Files\\dotnet' // Path to .NET SDK
-         SOLUTION_PATH = 'C:/Users/venkatesh.b/Desktop/DailyCheck_WebAutomation.sln'
+        SOLUTION_PATH = 'C:/Users/venkatesh.b/Desktop/DailyCheck_WebAutomation.sln' // Corrected path to the solution file
     }
 
     stages {
@@ -11,6 +11,7 @@ pipeline {
             steps {
                 echo 'Checking out the code...'
                 checkout scm
+                bat 'dir'  // List contents of workspace
             }
         }
 
