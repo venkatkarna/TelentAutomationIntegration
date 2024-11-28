@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOTNET_PATH = 'C:\\Program Files\\dotnet' // Path to .NET SDK
-        SOLUTION_PATH = 'C:\\Users\\venkatesh.b\\Desktop\\DailyCheck_WebAutomation.sln' // Path to the solution file
+         SOLUTION_PATH = 'C:/Users/venkatesh.b/Desktop/DailyCheck_WebAutomation.sln'
     }
 
     stages {
