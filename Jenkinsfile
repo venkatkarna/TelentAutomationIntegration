@@ -17,40 +17,46 @@ pipeline {
 
         stage('Restore Dependencies') {
             steps {
-                echo 'Restoring NuGet dependencies...'
-                def solutionPath = 'DailyCheck_WebAutomation.sln'  // Adjust if necessary
-                echo "Restoring solution: ${solutionPath}"
-                
-                // Execute 'dotnet restore'
-                def restore = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" restore \"${solutionPath}\"", returnStatus: true)
-                if (restore != 0) {
-                    error "Error: Restore failed!"
+                script {
+                    echo 'Restoring NuGet dependencies...'
+                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Adjust if necessary
+                    echo "Restoring solution: ${solutionPath}"
+                    
+                    // Execute 'dotnet restore'
+                    def restore = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" restore \"${solutionPath}\"", returnStatus: true)
+                    if (restore != 0) {
+                        error "Error: Restore failed!"
+                    }
                 }
             }
         }
 
         stage('Build') {
             steps {
-                echo 'Building the solution...'
-                def solutionPath = 'SpecFlowProjectDemo.sln'  // Update to correct solution if needed
-                echo "Building solution: ${solutionPath}"
+                script {
+                    echo 'Building the solution...'
+                    def solutionPath = 'SpecFlowProjectDemo.sln'  // Update to correct solution if needed
+                    echo "Building solution: ${solutionPath}"
 
-                // Execute 'dotnet build' command in Debug mode
-                def build = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" build \"${solutionPath}\" --configuration Debug", returnStatus: true)
-                if (build != 0) {
-                    error "Error: Build failed!"
+                    // Execute 'dotnet build' command in Debug mode
+                    def build = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" build \"${solutionPath}\" --configuration Debug", returnStatus: true)
+                    if (build != 0) {
+                        error "Error: Build failed!"
+                    }
                 }
             }
         }
 
         stage('Run Tests') {
             steps {
-                echo 'Running tests...'
-                def solutionPath = 'SpecFlowProjectDemo.sln'  // Adjust if necessary
-                // Assuming tests are in the solution defined in Build stage
-                def test = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" test \"${solutionPath}\" --no-build --logger:trx", returnStatus: true)
-                if (test != 0) {
-                    error "Error: Tests failed!"
+                script {
+                    echo 'Running tests...'
+                    def solutionPath = 'SpecFlowProjectDemo.sln'  // Adjust if necessary
+                    // Assuming tests are in the solution defined in Build stage
+                    def test = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" test \"${solutionPath}\" --no-build --logger:trx", returnStatus: true)
+                    if (test != 0) {
+                        error "Error: Tests failed!"
+                    }
                 }
             }
         }
