@@ -35,7 +35,7 @@ pipeline {
             steps {
                 script {
                     echo 'Building the solution...'
-                    def solutionPath = 'SpecFlowProjectDemo.sln'  // Update to correct solution if needed
+                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Update to correct solution if needed
                     echo "Building solution: ${solutionPath}"
 
                     // Execute 'dotnet build' command in Debug mode
@@ -51,7 +51,7 @@ pipeline {
             steps {
                 script {
                     echo 'Running tests...'
-                    def solutionPath = 'SpecFlowProjectDemo.sln'  // Adjust if necessary
+                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Adjust if necessary
                     // Assuming tests are in the solution defined in Build stage
                     def test = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" test \"${solutionPath}\" --no-build --logger:trx", returnStatus: true)
                     if (test != 0) {
