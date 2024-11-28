@@ -7,6 +7,20 @@ pipeline {
     }
 
     stages {
+        stage('Validate Paths') {
+            steps {
+                echo 'Validating critical paths...'
+                bat """
+                IF NOT EXIST "${DOTNET_PATH}\\dotnet.exe" (
+                    echo .NET SDK not found at ${DOTNET_PATH} && exit 1
+                )
+                IF NOT EXIST "${CHROME_DRIVER_PATH}" (
+                    echo ChromeDriver not found at ${CHROME_DRIVER_PATH} && exit 1
+                )
+                """
+            }
+        }
+
         stage('Checkout') {
             steps {
                 echo 'Checking out the code...'
@@ -17,14 +31,14 @@ pipeline {
         stage('Restore Dependencies') {
             steps {
                 echo 'Restoring NuGet dependencies...'
-                bat '"${DOTNET_PATH}\\dotnet.exe" restore "C:\\Users\\venkatesh.b\\Desktop\\DailyCheck_WebAutomation"'
+                bat '"${DOTNET_PATH}\\dotnet.exe" restore "${WORKSPACE}"'
             }
         }
 
         stage('Build') {
             steps {
                 echo 'Building the solution...'
-                bat '"${DOTNET_PATH}\\dotnet.exe" build "C:\\Users\\venkatesh.b\\Desktop\\DailyCheck_WebAutomation" --no-restore --configuration Release'
+                bat '"${DOTNET_PATH}\\dotnet.exe" build "${WORKSPACE}" --no-restore --configuration Release'
             }
         }
 
@@ -33,7 +47,7 @@ pipeline {
                 echo 'Running tests with SpecFlow...'
                 bat """
                 SET CHROME_DRIVER_PATH=${CHROME_DRIVER_PATH}
-                "${DOTNET_PATH}\\dotnet.exe" test "C:\\Users\\venkatesh.b\\Desktop\\DailyCheck_WebAutomation" --no-build --logger:trx
+                "${DOTNET_PATH}\\dotnet.exe" test "${WORKSPACE}" --no-build --logger:trx
                 """
             }
         }
