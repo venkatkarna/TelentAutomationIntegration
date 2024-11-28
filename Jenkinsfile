@@ -32,20 +32,12 @@ pipeline {
         }
 
         stage('Build') {
-            steps {
-                script {
-                    echo 'Building the solution...'
-                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Update to correct solution if needed
-                    echo "Building solution: ${solutionPath}"
+    steps {
+        echo 'Building the solution...'
+        bat "dotnet build DailyCheck_WebAutomation.sln --configuration Debug -p:TargetFramework=net461"
+    }
+}
 
-                    // Execute 'dotnet build' command in Debug mode
-                    def build = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" build \"${solutionPath}\" --configuration Debug", returnStatus: true)
-                    if (build != 0) {
-                        error "Error: Build failed!"
-                    }
-                }
-            }
-        }
 
         stage('Run Tests') {
             steps {
