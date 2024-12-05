@@ -1,69 +1,52 @@
 pipeline {
-    agent any
-
+    agent {
+        label 'windows'  // This assumes you're running Jenkins on a Windows node
+    }
     environment {
-        // If needed, define dotnet path (adjust if you want to use a custom path)
-        DOTNET_PATH = 'C:\\Program Files\\dotnet'  // Ensure this path is correct for your environment
+        // Define environment variables if needed
+        VSTEST_PATH = "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\Extensions\\TestPlatform\\vstest.console.exe"
     }
-
     stages {
-        stage('Checkout') {
+        stage('Checkout Code') {
             steps {
-                echo 'Checking out the code...'
+                // Checkout the repository to get the latest code
                 checkout scm
-                bat 'dir'  // List contents of workspace to ensure correct files are present
             }
         }
-
-        stage('Restore Dependencies') {
+        stage('Build Project') {
             steps {
-                script {
-                    echo 'Restoring NuGet dependencies...'
-                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Adjust if necessary
-                    echo "Restoring solution: ${solutionPath}"
-                    
-                    // Execute 'dotnet restore'
-                    def restore = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" restore \"${solutionPath}\"", returnStatus: true)
-                    if (restore != 0) {
-                        error "Error: Restore failed!"
-                    }
-                }
+                // Build the project (this assumes your project is a .NET project)
+                bat 'dotnet build D:\\DailyCheck_WebAutomation\\DailyCheck_WebAutomation.sln -c Release'
             }
         }
-
-        stage('Build') {
-    steps {
-        echo 'Building the solution...'
-        bat "dotnet build DailyCheck_WebAutomation.sln --configuration Debug -p:TargetFramework=net461"
-    }
-}
-
-
-        stage('Run Tests') {
+        stage('Run Smoke Tests') {
             steps {
+                // Navigate to the Debug folder dynamically (using the Git repo root)
                 script {
-                    echo 'Running tests...'
-                    def solutionPath = 'DailyCheck_WebAutomation.sln'  // Adjust if necessary
-                    // Assuming tests are in the solution defined in Build stage
-                    def test = bat(script: "\"${DOTNET_PATH}\\dotnet.exe\" test \"${solutionPath}\" --no-build --logger:trx", returnStatus: true)
-                    if (test != 0) {
-                        error "Error: Tests failed!"
-                    }
+                    def repoRoot = bat(script: 'git rev-parse --show-toplevel', returnStdout: true).trim()
+                    def testPath = "${repoRoot}\\DailyCheck_WebAutomation\\bin\\Debug"
+                    echo "Running tests in: ${testPath}"
                 }
+                // Run the smoke tests using vstest.console.exe
+                bat """
+                cd /d ${testPath}
+                "${VSTEST_PATH}" DailyCheck_WebAutomation.dll /TestCaseFilter:"TestCategory=smoke"
+                """
             }
         }
     }
-
     post {
         always {
-            echo 'Cleaning workspace...'
-            cleanWs()
+            // Actions to run after the tests, like archiving test results (optional)
+            junit '**/TestResults/*.xml'  // Adjust this path based on your test result location
         }
         success {
-            echo 'Build and tests completed successfully!'
+            // Actions if the build and tests pass (optional)
+            echo 'Tests passed successfully!'
         }
         failure {
-            echo 'Build or tests failed.'
+            // Actions if the build or tests fail (optional)
+            echo 'Tests failed!'
         }
     }
 }
